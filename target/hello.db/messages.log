@@ -1,0 +1,711 @@
+2016-05-09 09:57:51.248+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2016-05-09 09:57:51.395+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2016-05-09 09:57:51.399+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2016-05-09 09:57:51.407+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=target/hello.db
+2016-05-09 09:57:51.408+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2016-05-09 09:57:51.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2016-05-09 09:57:51.411+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2016-05-09 09:57:51.412+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2016-05-09 09:57:51.412+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2016-05-09 09:57:51.412+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2016-05-09 09:57:51.412+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2016-05-09 09:57:51.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2016-05-09 09:57:51.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2016-05-09 09:57:51.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2016-05-09 09:57:51.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2016-05-09 09:57:51.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2016-05-09 09:57:51.414+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2016-05-09 09:57:51.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 11.87 GB
+2016-05-09 09:57:51.430+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 7.10 GB
+2016-05-09 09:57:51.430+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 927.53 MB
+2016-05-09 09:57:51.430+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 19.81 GB
+2016-05-09 09:57:51.431+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 14.15 GB
+2016-05-09 09:57:51.433+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2016-05-09 09:57:51.434+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 260.84 MB
+2016-05-09 09:57:51.434+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 504.00 MB
+2016-05-09 09:57:51.434+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 2.64 GB
+2016-05-09 09:57:51.435+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2016-05-09 09:57:51.435+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2016-05-09 09:57:51.437+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=11.25 MB, used=11.19 MB, max=240.00 MB, threshold=0.00 B
+2016-05-09 09:57:51.438+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Metaspace (Non-heap memory): committed=29.38 MB, used=28.55 MB, max=-1.00 B, threshold=0.00 B
+2016-05-09 09:57:51.439+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Compressed Class Space (Non-heap memory): committed=3.88 MB, used=3.68 MB, max=1.00 GB, threshold=0.00 B
+2016-05-09 09:57:51.440+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=383.50 MB, used=207.75 MB, max=981.00 MB, threshold=?
+2016-05-09 09:57:51.440+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=16.00 MB, used=7.70 MB, max=16.00 MB, threshold=?
+2016-05-09 09:57:51.441+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=104.50 MB, used=27.72 MB, max=1.98 GB, threshold=0.00 B
+2016-05-09 09:57:51.441+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2016-05-09 09:57:51.442+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2016-05-09 09:57:51.443+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 4404@meiquaA
+2016-05-09 09:57:51.443+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2016-05-09 09:57:51.443+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Asia/Shanghai
+2016-05-09 09:57:51.443+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 25.91-b14
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: []
+2016-05-09 09:57:51.444+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2016-05-09 09:57:51.449+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/jfxrt.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/zipfs.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/sunmscapi.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/sunpkcs11.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/dnsns.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\rt.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/localedata.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\classes
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.1] file:/C:/Users/meiqua/Desktop/bop/gs-accessing-neo4j-data-rest-master/gs-accessing-neo4j-data-rest-master/complete/build/libs/gs-accessing-neo4j-data-rest-0.1.0.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/access-bridge-64.jar
+2016-05-09 09:57:51.450+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/sunec.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\jce.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/cldrdata.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/nashorn.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/sunjce_provider.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_91\lib\resources.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_91/lib/ext/jaccess.jar
+2016-05-09 09:57:51.451+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2016-05-09 09:57:51.452+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2016-05-09 09:57:51.452+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2016-05-09 09:57:51.453+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2016-05-09 09:57:51.453+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2016-05-09 09:57:51.453+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2016-05-09 09:57:51.453+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2016-05-09 09:57:51.454+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2016-05-09 09:57:51.454+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2016-05-09 09:57:51.454+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2016-05-09 09:57:51.455+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2016-05-09 09:57:51.455+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\CMake\bin
+2016-05-09 09:57:51.456+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Qt\Tools\mingw492_32\bin
+2016-05-09 09:57:51.457+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Qt\5.5\mingw492_32\bin
+2016-05-09 09:57:51.457+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\opencv\opencv3.0\opencv_file\bin
+2016-05-09 09:57:51.458+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\runtime\win64
+2016-05-09 09:57:51.458+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\bin
+2016-05-09 09:57:51.458+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\polyspace\bin
+2016-05-09 09:57:51.459+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\AppData\Local\Programs\Python\Python35\Scripts
+2016-05-09 09:57:51.460+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\AppData\Local\Programs\Python\Python35
+2016-05-09 09:57:51.461+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_91\bin
+2016-05-09 09:57:51.461+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_91\jre\bin
+2016-05-09 09:57:51.462+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\gradle-2.13\bin
+2016-05-09 09:57:51.462+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin
+2016-05-09 09:57:51.463+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\mysql-5.7.12-winx64\bin
+2016-05-09 09:57:51.463+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\Desktop\bop\gs-accessing-neo4j-data-rest-master\gs-accessing-neo4j-data-rest-master\complete
+2016-05-09 09:57:51.463+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jre1.8.0_91\bin
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = CN
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = 
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: PID = 4404
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Users\meiqua\Desktop\bop\gs-accessing-neo4j-data-rest-master\gs-accessing-neo4j-data-rest-master\complete
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.jboss.logging.provider = slf4j
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = GBK
+2016-05-09 09:57:51.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: spring.beaninfo.ignore = true
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\meiqua
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.useNaming = false
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Asia/Shanghai
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = GBK
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.home = C:\Users\meiqua\AppData\Local\Temp\tomcat.626200297619642037.8080
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = meiqua
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = C:\Users\meiqua\Desktop\bop\gs-accessing-neo4j-data-rest-master\gs-accessing-neo4j-data-rest-master\complete\build\libs\gs-accessing-neo4j-data-rest-0.1.0.jar
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = zh
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.stderr.encoding = ms936
+2016-05-09 09:57:51.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.base = C:\Users\meiqua\AppData\Local\Temp\tomcat.626200297619642037.8080
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.stdout.encoding = ms936
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2016-05-09 09:57:51.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2016-05-09 09:57:51.658+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2016-05-09 09:57:51.659+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #4:
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft 6to4 Adapter:
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPTP):
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6):
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9:
+2016-05-09 09:57:51.660+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 10.13.14.50
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:fdc0:c49d:8802:9553%eth1
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Kernel Debug Network Adapter:
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor):
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller:
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:ffff:ffff:fffe%net3
+2016-05-09 09:57:51.661+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter:
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (SSTP):
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPPOE):
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet1:
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #3:
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IKEv2):
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #5:
+2016-05-09 09:57:51.662+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:a0d:e32%net8
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP):
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth Device (RFCOMM Protocol TDI):
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #7:
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:abd:bba4%net10
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (L2TP):
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth Device (Personal Area Network):
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:895b:9eae:b3c9:829f%eth7
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230:
+2016-05-09 09:57:51.663+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 10.189.187.164
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2403:d400:1000:6:4189:9b37:a569:54ed
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2403:d400:1000:6:b130:cfba:1331:ab89
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:4189:9b37:a569:54ed%wlan0
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:60ed:6616:be1a:7681%wlan1
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #2:
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:c901%net12
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet8:
+2016-05-09 09:57:51.664+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.201.1
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:3c95:f6dc:ce37:ec72%eth8
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.665+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-Virtual WiFi Filter Driver-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-Native WiFi Filter Driver-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.666+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2016-05-09 09:57:51.667+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2016-05-09 09:57:51.888+0000 INFO  [o.n.k.i.s.StoreFactory]: Creating new db @ target\hello.db\neostore
+2016-05-09 09:58:02.737+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-05-09 09:58:02.786+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-05-09 09:58:02.967+0000 INFO  [o.n.k.NeoStoreDataSource]: Opened logical log [target\hello.db\neostore.transaction.db.0] version=0, lastTxId=1 (clean)
+2016-05-09 09:58:02.977+0000 WARN  [o.n.k.i.s.StoreFactory]: Missing counts store, rebuilding it.
+2016-05-09 09:58:03.198+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2016-05-09 09:58:03.202+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly -1 nodes)
+2016-05-09 09:58:03.214+0000 INFO  [o.n.k.KernelHealth]: Kernel health set to OK
+2016-05-09 09:58:04.710+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-05-09 09:58:04.710+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1462787871888, randomId=364552739334736869, storeVersion=14969031248344582, upgradeTime=1462787871888, upgradeId=1}
+2016-05-09 09:58:04.710+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5
+2016-05-09 09:58:04.710+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Consistency Checker (neo4j-consistency-check), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.2 (neo4j-cypher-compiler-2.2), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.8; revision: 2.1.8:2.1-maint:687/5c83ce3a5ddf33259593f719153ce71a6fe89fc7
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Community (neo4j), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 09:58:04.716+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-05-09 09:58:04.719+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-05-09 09:58:04.719+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.5
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-05-09 09:58:04.720+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-05-09 09:58:04.721+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2016-05-09 09:58:04.721+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2016-05-09 09:58:04.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=1 high=0
+2016-05-09 09:58:04.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=0 high=-1
+2016-05-09 09:58:04.721+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2016-05-09 09:58:04.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2016-05-09 09:58:04.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=0 high=-1
+2016-05-09 09:58:04.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2016-05-09 09:58:04.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2016-05-09 09:58:04.722+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1 high=0
+2016-05-09 09:58:04.723+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2016-05-09 09:58:04.724+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2016-05-09 09:58:04.724+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-05-09 09:58:04.725+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-05-09 09:58:04.727+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 85899341824 / 885096448 / 1
+Storage files: (filename : modification date - size)
+2016-05-09 09:58:04.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2016-05-09 09:58:04.731+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2016-05-09T17:57:51+0800 - 0.00 B
+2016-05-09 09:58:04.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2016-05-09T17:58:03+0800 - 28.75 kB
+2016-05-09 09:58:04.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2016-05-09T17:58:02+0800 - 99.00 B
+2016-05-09 09:58:04.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.a: 2016-05-09T17:58:03+0800 - 114.00 B
+2016-05-09 09:58:04.734+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2016-05-09T17:58:02+0800 - 9.00 B
+2016-05-09 09:58:04.734+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2016-05-09T17:57:58+0800 - 9.00 B
+2016-05-09 09:58:04.735+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 09:58:04.736+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2016-05-09T17:57:58+0800 - 9.00 B
+2016-05-09 09:58:04.737+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.739+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2016-05-09T17:58:01+0800 - 9.00 B
+2016-05-09 09:58:04.740+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2016-05-09T17:58:02+0800 - 68.00 B
+2016-05-09 09:58:04.741+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2016-05-09T17:58:01+0800 - 9.00 B
+2016-05-09 09:58:04.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.742+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2016-05-09T17:58:02+0800 - 128.00 B
+2016-05-09 09:58:04.743+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2016-05-09T17:58:00+0800 - 9.00 B
+2016-05-09 09:58:04.744+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2016-05-09T17:58:00+0800 - 9.00 B
+2016-05-09 09:58:04.744+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.745+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2016-05-09T17:57:59+0800 - 9.00 B
+2016-05-09 09:58:04.745+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 09:58:04.747+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2016-05-09T17:57:59+0800 - 9.00 B
+2016-05-09 09:58:04.748+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2016-05-09T17:58:02+0800 - 128.00 B
+2016-05-09 09:58:04.749+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2016-05-09T17:57:59+0800 - 9.00 B
+2016-05-09 09:58:04.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2016-05-09T17:58:02+0800 - 25.00 B
+2016-05-09 09:58:04.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2016-05-09T17:58:02+0800 - 9.00 B
+2016-05-09 09:58:04.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.751+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2016-05-09T17:58:00+0800 - 9.00 B
+2016-05-09 09:58:04.751+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.752+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2016-05-09T17:57:58+0800 - 9.00 B
+2016-05-09 09:58:04.752+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 09:58:04.752+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2016-05-09T17:57:57+0800 - 9.00 B
+2016-05-09 09:58:04.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2016-05-09T17:58:02+0800 - 64.00 B
+2016-05-09 09:58:04.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2016-05-09T17:58:01+0800 - 9.00 B
+2016-05-09 09:58:04.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.transaction.db.0: 2016-05-09T17:58:02+0800 - 16.00 B
+2016-05-09 09:58:04.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2016-05-09 09:58:04.755+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2016-05-09 09:58:04.756+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2016-05-09 09:58:04.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 09:58:04.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2016-05-09T17:57:51+0800 - 0.00 B
+2016-05-09 09:58:04.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-05-09 09:58:04.854+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2016-05-09 09:58:10.470+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 500ms.
+2016-05-09 10:15:35.825+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2016-05-09 10:15:36.035+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2016-05-09 10:15:36.037+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2016-05-09 10:15:36.041+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=target/hello.db
+2016-05-09 10:15:36.041+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2016-05-09 10:15:36.043+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2016-05-09 10:15:36.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2016-05-09 10:15:36.045+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2016-05-09 10:15:36.048+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 11.87 GB
+2016-05-09 10:15:36.048+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 5.86 GB
+2016-05-09 10:15:36.048+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 686.94 MB
+2016-05-09 10:15:36.048+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 19.81 GB
+2016-05-09 10:15:36.048+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 12.52 GB
+2016-05-09 10:15:36.049+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2016-05-09 10:15:36.049+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 257.95 MB
+2016-05-09 10:15:36.050+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 351.50 MB
+2016-05-09 10:15:36.050+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 2.64 GB
+2016-05-09 10:15:36.050+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2016-05-09 10:15:36.050+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2016-05-09 10:15:36.051+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=10.63 MB, used=9.75 MB, max=240.00 MB, threshold=0.00 B
+2016-05-09 10:15:36.051+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Metaspace (Non-heap memory): committed=29.63 MB, used=28.93 MB, max=-1.00 B, threshold=0.00 B
+2016-05-09 10:15:36.052+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Compressed Class Space (Non-heap memory): committed=3.88 MB, used=3.68 MB, max=1.00 GB, threshold=0.00 B
+2016-05-09 10:15:36.052+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=132.50 MB, used=22.22 MB, max=962.50 MB, threshold=?
+2016-05-09 10:15:36.052+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=13.50 MB, used=0.00 B, max=13.50 MB, threshold=?
+2016-05-09 10:15:36.053+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=205.50 MB, used=73.04 MB, max=1.98 GB, threshold=0.00 B
+2016-05-09 10:15:36.053+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2016-05-09 10:15:36.054+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 1436@meiquaA
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Asia/Shanghai
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2016-05-09 10:15:36.055+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 25.91-b14
+2016-05-09 10:15:36.056+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2016-05-09 10:15:36.056+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-Didea.launcher.port=7532, -Didea.launcher.bin.path=E:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.5\bin, -Dfile.encoding=GBK]
+2016-05-09 10:15:36.057+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2016-05-09 10:15:36.109+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/jsse.jar
+2016-05-09 10:15:36.109+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunmscapi.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/resources.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/nashorn.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunjce_provider.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-lucene-index/2.2.5/6d93fcfc476f6b5d6c422f10fc21be8494b8a054/neo4j-lucene-index-2.2.5.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-1.9/2.0.4/93381595ffca5c8813eb65af32a910637dc0c408/neo4j-cypher-compiler-1.9-2.0.4.jar
+2016-05-09 10:15:36.110+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/sunpkcs11.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/331b564a3a42f002a0004b039c1c430da89062cd/jcl-over-slf4j-1.7.21.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.6.RELEASE/7c7ea475d33287e0e3a92e98ccbe0ad6a0dbb9ca/spring-webmvc-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] E:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.5\lib\idea_rt.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/deploy.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\jaccess.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.10.5/57ac67a6cf6fd591e235c62f8893438e8d10431d/scala-library-2.10.5.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-2.2/2.2.5/e64465cd63064481ef9636dd47bf35fc45bc730b/neo4j-cypher-compiler-2.2-2.2.5.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-primitive-collections/2.2.5/a37094d534c81e1ea73c1e3b275bcc823b7e2fa/neo4j-primitive-collections-2.2.5.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-unsafe/2.2.5/2114ee2894e3b6119860dcdd4e2ec1e192406daf/neo4j-unsafe-2.2.5.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar
+2016-05-09 10:15:36.111+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-2.1/2.1.8/e53518fb1770c2a8a8d2965488c7ae1365953ef7/neo4j-cypher-compiler-2.1-2.1.8.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/9865cf6994f9ff13fce0bf93f2054ef6c65bb462/logback-classic-1.1.7.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.4.RELEASE/18f9f5f00cc794339860ca2a082a70e99ef3797a/spring-boot-starter-logging-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-dsl/2.0.1/519d317979935773646356ee2f7923090f7d53e8/neo4j-cypher-dsl-2.0.1.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/jce.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\management-agent.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-matching/2.2.5/2845dc6e08b46ac538846f1d67c3890cf213c0c/neo4j-graph-matching-2.2.5.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.6.RELEASE/d4a319fb4d949fb6313f45c929947b9b4e26283e/spring-beans-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.2.4.Final/fb18766b576aa6632bcfe9a20a023cbd52bf9769/hibernate-validator-5.2.4.Final.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\jfxrt.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\zipfs.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.21/b3700d97464d99bdcd42c0177d6e7951c94d75ff/log4j-over-slf4j-1.7.21.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/rt.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.parboiled/parboiled-scala_2.10/1.1.7/c20d486f11cc115c0df2ebc2aefb2773f9f9fb11/parboiled-scala_2.10-1.1.7.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/dnsns.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunpkcs11.jar
+2016-05-09 10:15:36.112+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.0.33/31423f2d493cf1f7cf5f0082c9f94640e93b8c1b/tomcat-embed-el-8.0.33.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/1.3.4.RELEASE/ad740d6c0113cb5dcb478e5c497830f0a99cd022/spring-boot-starter-data-rest-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/charsets.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j/2.2.5/1d7eced3e7e07b743379797711bb1076f91a8835/neo4j-2.2.5.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-graph-algo/2.2.5/b2181bde4978ecb533ca09e62c46f2adb121d849/neo4j-graph-algo-2.2.5.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/jfr.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.0.33/66bc309e0227c1ba2cf4417182d0b1583003d24b/tomcat-embed-logging-juli-8.0.33.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\deploy.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.10.5/7392facb48876c67a89fcb086112b195f5f6bbc3/scala-reflect-2.10.5.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\dnsns.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.9/87372d9e2323313bec24b09a325bfea8ae0eb867/aspectjrt-1.8.9.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/d64fb662c9e42789149f5078a62a22edda786c6a/snakeyaml-1.16.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/jfxswt.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/3.6.2/9ec77e2507f9cc01756964c71d91efd8154a8c47/lucene-core-3.6.2.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-io/2.2.5/d318dfdbf06a43ea1529c92154ad3b8187d8da58/neo4j-io-2.2.5.jar
+2016-05-09 10:15:36.113+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/plugin.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.19.0.RELEASE/77b3b15c301d2517356b76304a2670df33ef2e2c/spring-hateoas-0.19.0.RELEASE.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/access-bridge-64.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.6/7ef6440e71531604aa44a5eb62d4b466ffbf7e8f/jackson-annotations-2.6.6.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.github.fge/json-patch/1.7/78831bdcabc64a4f9e64e1439763010b24e0d71d/json-patch-1.7.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.6/5108dde6049374ba980b360e1ecff49847baba4a/jackson-databind-2.6.6.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.6.RELEASE/ba7502c0644414748b1eeb65b4193b05d335a110/spring-tx-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/Desktop/bop/gs-accessing-neo4j-data-rest-master/gs-accessing-neo4j-data-rest-master/complete/build/resources/main/
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.6/2eb801df67aacaf5b1deb4ac626e1964508e47b/jackson-core-2.6.6.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.2.0.RELEASE/f380e7760032e7d929184f8ad8a33716b75c0657/spring-plugin-core-1.2.0.RELEASE.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/localedata.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-consistency-check/2.2.5/aa6467323e1bfef2f5653732727b5242e67cf279/neo4j-consistency-check-2.2.5.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/cldrdata.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\access-bridge-64.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-udc/2.2.5/c8e618b7c5275b3d565678894055386fb6b68ed/neo4j-udc-2.2.5.jar
+2016-05-09 10:15:36.114+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.6.RELEASE/a1c6ef01f18888f51fc5054c65ef4787b7cf0a1e/spring-core-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.github.fge/jackson-coreutils/1.6/9e6af56eb7cc2a65700b289abc7ee2bd170fd231/jackson-coreutils-1.6.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/2.4.4.RELEASE/41c0fad87f74df36b3b4167f699523a0d505acd0/spring-data-rest-webmvc-2.4.4.RELEASE.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.6.RELEASE/c0182d73f348ab11d51d45cbe29f3820c32d0ccc/spring-expression-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.1.0/dbbd699a1486ad0f2ed6f5af6cfed66acacb9056/classmate-1.1.0.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed/jul-to-slf4j-1.7.21.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/sunec.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/management-agent.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/jaccess.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/d5ce949da3f3266f118ed899a153413613b503ad/spring-web-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/javaws.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-neo4j/3.4.4.RELEASE/aa977a8a38afc8608e6a28e925b34a4aae69ca8d/spring-data-neo4j-3.4.4.RELEASE.jar
+2016-05-09 10:15:36.115+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.4.RELEASE/c2b1fd4dbf7dff772d6124bb35892759e8bf088e/spring-data-commons-1.11.4.RELEASE.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\localedata.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_91\jre\classes
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/zipfs.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.atteo/evo-inflector/1.2.1/b9cdd1e7dc20a222db0853dfb152ef349c7d0eed/evo-inflector-1.2.1.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.4.RELEASE/3ec620ecf0844c5f441c6de729607f4953bba9f5/spring-boot-autoconfigure-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.0] file:/E:/Program%20Files%20(x86)/JetBrains/IntelliJ%20IDEA%2014.1.5/lib/idea_rt.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\nashorn.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.3.4.RELEASE/3bc6b3ed8534185367970ff4fbf65dc0e12aec79/spring-boot-starter-tomcat-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.parboiled/parboiled-core/1.1.7/a60ff9a54cbeb30ec44c89e16ac4c35913cbad5a/parboiled-core-1.1.7.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.2.6.RELEASE/7ed7b15e95eedd551ac979bd8c295256d96cf2ff/spring-aspects-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher/2.2.5/cf4986962339140844de3cbf839d42fd52bf4ffb/neo4j-cypher-2.2.5.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.github.fge/msg-simple/1.1/f261263e13dd4cfa93cc6b83f1f58f619097a2c4/msg-simple-1.1.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.github.fge/btf/1.2/9e66651022eb86301b348d57e6f59459effc343b/btf-1.2.jar
+2016-05-09 10:15:36.116+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-kernel/2.2.5/5e12600bf7cc1d069a994d6670d5c8052997e9bd/neo4j-kernel-2.2.5.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-csv/2.2.5/8d8fc9a40cca111654bf7b8ae90cef3a588f3d48/neo4j-csv-2.2.5.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/Desktop/bop/gs-accessing-neo4j-data-rest-master/gs-accessing-neo4j-data-rest-master/complete/build/classes/main/
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4/d4b42ed76a166a81dbac613339eed3343be6bd2d/concurrentlinkedhashmap-lru-1.4.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/jfxrt.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.0.33/be1f95e5d9ae00f9bc6138441d29cfe5c7c60256/tomcat-embed-websocket-8.0.33.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/sunjce_provider.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap + classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunec.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5/guava-16.0.1.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\plugin.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.4.RELEASE/172ecbac4f2031d7769a4b5fdd696827aaf5d894/spring-boot-starter-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.6.RELEASE/bbf3c8526fe37bb341507f28db17882d4348dbca/spring-context-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\javaws.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfxswt.jar
+2016-05-09 10:15:36.117+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-compiler-2.0/2.0.4/13277d9b4ae208ca1145210488502a80bbf20376/neo4j-cypher-compiler-2.0-2.0.4.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.3.4.RELEASE/ca127670c00a56fd5bfc65da433c01e5c0ed467c/spring-boot-starter-validation-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.0.33/4e7f547fbb2c364cb5e02a58790c5fb89e31efed/tomcat-embed-core-8.0.33.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-jmx/2.2.5/ec1f51d8029fe01ea2514aa41dfc1f118f3da93a/neo4j-jmx-2.2.5.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.3.4.RELEASE/4e6e52428d608daa0119ba348a45754f3c8aa669/spring-boot-starter-web-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath] C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\cldrdata.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_91/jre/lib/ext/sunmscapi.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.4.RELEASE/a89b67bc53e0c7608ba4ad2fe59be768dd9eb3f9/spring-boot-1.3.4.RELEASE.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/5efbfccb19efda2956b8977561bf4da6b15b0d0e/spring-aop-4.2.6.RELEASE.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Users/meiqua/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/2.4.4.RELEASE/a770ecceb87de091f60d920e3dedfeed3f79088b/spring-data-rest-core-2.4.4.RELEASE.jar
+2016-05-09 10:15:36.118+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2016-05-09 10:15:36.119+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_91\bin
+2016-05-09 10:15:36.119+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2016-05-09 10:15:36.120+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2016-05-09 10:15:36.120+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2016-05-09 10:15:36.121+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2016-05-09 10:15:36.121+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2016-05-09 10:15:36.121+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2016-05-09 10:15:36.122+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2016-05-09 10:15:36.122+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2016-05-09 10:15:36.123+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2016-05-09 10:15:36.123+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\CMake\bin
+2016-05-09 10:15:36.124+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Qt\Tools\mingw492_32\bin
+2016-05-09 10:15:36.124+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Qt\5.5\mingw492_32\bin
+2016-05-09 10:15:36.125+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\opencv\opencv3.0\opencv_file\bin
+2016-05-09 10:15:36.125+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\runtime\win64
+2016-05-09 10:15:36.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\bin
+2016-05-09 10:15:36.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: E:\Program Files\MATLAB\R2016a\polyspace\bin
+2016-05-09 10:15:36.127+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\AppData\Local\Programs\Python\Python35\Scripts
+2016-05-09 10:15:36.128+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\AppData\Local\Programs\Python\Python35
+2016-05-09 10:15:36.128+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_91\bin
+2016-05-09 10:15:36.129+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_91\jre\bin
+2016-05-09 10:15:36.129+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\gradle-2.13\bin
+2016-05-09 10:15:36.130+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin
+2016-05-09 10:15:36.131+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\mysql-5.7.12-winx64\bin
+2016-05-09 10:15:36.131+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\meiqua\Desktop\bop\gs-accessing-neo4j-data-rest-master\gs-accessing-neo4j-data-rest-master\complete
+2016-05-09 10:15:36.131+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_91\jre\bin
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: idea.launcher.port = 7532
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = CN
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = 
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: PID = 1436
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Users\meiqua\Desktop\bop\gs-accessing-neo4j-data-rest-master\gs-accessing-neo4j-data-rest-master\complete
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.jboss.logging.provider = slf4j
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = GBK
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: spring.beaninfo.ignore = true
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2016-05-09 10:15:36.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\meiqua
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.useNaming = false
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Asia/Shanghai
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = GBK
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: idea.launcher.bin.path = E:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.5\bin
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.home = C:\Users\meiqua\AppData\Local\Temp\tomcat.3326895356623442797.8080
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = meiqua
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = com.intellij.rt.execution.application.AppMain hello.Application --spring.output.ansi.enabled=always
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = zh
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.base = C:\Users\meiqua\AppData\Local\Temp\tomcat.3326895356623442797.8080
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2016-05-09 10:15:36.133+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2016-05-09 10:15:36.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2016-05-09 10:15:36.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2016-05-09 10:15:36.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2016-05-09 10:15:36.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2016-05-09 10:15:36.310+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2016-05-09 10:15:36.311+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #4:
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft 6to4 Adapter:
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPTP):
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6):
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9:
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 10.13.14.50
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:fdc0:c49d:8802:9553%eth1
+2016-05-09 10:15:36.312+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Kernel Debug Network Adapter:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor):
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:ffff:ffff:fffe%net3
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (SSTP):
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (PPPOE):
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet1:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #3:
+2016-05-09 10:15:36.313+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IKEv2):
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #5:
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:a0d:e32%net8
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP):
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth Device (RFCOMM Protocol TDI):
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #7:
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:abd:bba4%net10
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (L2TP):
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth Device (Personal Area Network):
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:895b:9eae:b3c9:829f%eth7
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230:
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 10.189.187.164
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2403:d400:1000:6:4189:9b37:a569:54ed
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2403:d400:1000:6:5c10:8223:ca25:3f19
+2016-05-09 10:15:36.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:4189:9b37:a569:54ed%wlan0
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:60ed:6616:be1a:7681%wlan1
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft ISATAP Adapter #2:
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:c901%net12
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VMware Virtual Ethernet Adapter for VMnet8:
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.201.1
+2016-05-09 10:15:36.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:3c95:f6dc:ce37:ec72%eth8
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface TAP-Windows Adapter V9-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Realtek PCIe FE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-Virtual WiFi Filter Driver-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-Native WiFi Filter Driver-0000:
+2016-05-09 10:15:36.316+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Centrino(R) Wireless-N 2230-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2016-05-09 10:15:36.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2016-05-09 10:15:36.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2016-05-09 10:15:36.798+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2016-05-09 10:15:36.962+0000 INFO  [o.n.k.NeoStoreDataSource]: Recovery required for log with version 0
+2016-05-09 10:15:37.169+0000 INFO  [o.n.k.i.s.StoreFactory]: About to rotate counts store at transaction 2 to [target\hello.db\neostore.counts.db.b], from [target\hello.db\neostore.counts.db.a].
+2016-05-09 10:15:37.187+0000 INFO  [o.n.k.i.s.StoreFactory]: Successfully rotated counts store at transaction 2 to [target\hello.db\neostore.counts.db.b], from [target\hello.db\neostore.counts.db.a].
+2016-05-09 10:15:39.321+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2016-05-09 10:15:39.330+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly -1 nodes)
+2016-05-09 10:15:39.344+0000 INFO  [o.n.k.NeoStoreDataSource]: Recovery completed. 1 transactions, first:2, last:2 recovered
+2016-05-09 10:15:39.345+0000 INFO  [o.n.k.KernelHealth]: Kernel health set to OK
+2016-05-09 10:15:40.019+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2016-05-09 10:15:40.020+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1462787871888, randomId=364552739334736869, storeVersion=14969031248344582, upgradeTime=1462787871888, upgradeId=1}
+2016-05-09 10:15:40.020+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5
+2016-05-09 10:15:40.020+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Consistency Checker (neo4j-consistency-check), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.2 (neo4j-cypher-compiler-2.2), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.8; revision: 2.1.8:2.1-maint:687/5c83ce3a5ddf33259593f719153ce71a6fe89fc7
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Community (neo4j), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.036+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2016-05-09 10:15:40.037+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2016-05-09 10:15:40.041+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2016-05-09 10:15:40.042+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.5
+2016-05-09 10:15:40.043+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.5
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=1 high=0
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=0 high=-1
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2016-05-09 10:15:40.044+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=0 high=-1
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1 high=0
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2016-05-09 10:15:40.045+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2016-05-09 10:15:40.046+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2016-05-09 10:15:40.050+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 85899341824 / 574394368 / 0
+Storage files: (filename : modification date - size)
+2016-05-09 10:15:40.053+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2016-05-09 10:15:40.054+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 10:15:40.054+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index.db: 2016-05-09T17:58:07+0800 - 119.00 B
+2016-05-09 10:15:40.055+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2016-05-09T17:57:51+0800 - 0.00 B
+2016-05-09 10:15:40.055+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2016-05-09T17:58:11+0800 - 87.42 kB
+2016-05-09 10:15:40.057+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2016-05-09T18:15:37+0800 - 8.00 kB
+2016-05-09 10:15:40.057+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.a: 2016-05-09T17:58:03+0800 - 114.00 B
+2016-05-09 10:15:40.058+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.b: 2016-05-09T18:15:37+0800 - 114.00 B
+2016-05-09 10:15:40.060+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2016-05-09T18:15:39+0800 - 9.00 B
+2016-05-09 10:15:40.060+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2016-05-09T17:58:02+0800 - 8.00 kB
+2016-05-09 10:15:40.061+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2016-05-09T18:15:37+0800 - 9.00 B
+2016-05-09 10:15:40.061+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 10:15:40.062+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2016-05-09T18:15:37+0800 - 9.00 B
+2016-05-09 10:15:40.062+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 10:15:40.063+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.064+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2016-05-09T17:58:02+0800 - 68.00 B
+2016-05-09 10:15:40.064+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.065+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 10:15:40.066+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2016-05-09T17:58:02+0800 - 128.00 B
+2016-05-09 10:15:40.066+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.067+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.068+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2016-05-09T17:58:02+0800 - 8.00 kB
+2016-05-09 10:15:40.068+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.068+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 10:15:40.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2016-05-09T17:58:02+0800 - 128.00 B
+2016-05-09 10:15:40.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.070+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2016-05-09T17:58:02+0800 - 25.00 B
+2016-05-09 10:15:40.070+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2016-05-09T18:15:39+0800 - 9.00 B
+2016-05-09 10:15:40.070+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2016-05-09T17:58:02+0800 - 0.00 B
+2016-05-09 10:15:40.071+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2016-05-09T18:15:38+0800 - 9.00 B
+2016-05-09 10:15:40.071+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2016-05-09T17:58:02+0800 - 8.00 kB
+2016-05-09 10:15:40.072+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2016-05-09T18:15:37+0800 - 9.00 B
+2016-05-09 10:15:40.072+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2016-05-09T17:58:02+0800 - 38.00 B
+2016-05-09 10:15:40.072+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2016-05-09T18:15:37+0800 - 9.00 B
+2016-05-09 10:15:40.073+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2016-05-09T17:58:02+0800 - 64.00 B
+2016-05-09 10:15:40.073+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2016-05-09T18:15:39+0800 - 9.00 B
+2016-05-09 10:15:40.073+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.transaction.db.0: 2016-05-09T17:58:07+0800 - 142.00 B
+2016-05-09 10:15:40.074+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2016-05-09 10:15:40.074+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2016-05-09 10:15:40.074+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2016-05-09 10:15:40.075+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2016-05-09T18:15:37+0800 - 20.00 B
+2016-05-09 10:15:40.075+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_1: 2016-05-09T18:15:37+0800 - 32.00 B
+2016-05-09 10:15:40.076+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2016-05-09T18:15:36+0800 - 0.00 B
+2016-05-09 10:15:40.076+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2016-05-09T18:15:37+0800 - 52.00 B
+2016-05-09 10:15:40.076+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2016-05-09T18:15:36+0800 - 52.00 B
+2016-05-09 10:15:40.076+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2016-05-09T17:58:02+0800 - 52.00 B
+2016-05-09 10:15:40.077+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2016-05-09T17:57:51+0800 - 0.00 B
+2016-05-09 10:15:40.077+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2016-05-09 10:15:40.132+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2016-05-09 10:15:43.070+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 526ms.
+2016-05-09 10:21:00.082+0000 INFO  [o.n.k.i.q.QueryExecutionEngine]: Discarded stale query from the query cache: CYPHER 2.2 MATCH (`person`:`Person`) RETURN `person`
+2016-05-09 10:21:00.083+0000 INFO  [o.n.k.i.q.QueryExecutionEngine]: Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(person)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(person),List(LabelName(Person)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(person),Identifier(person)))),None,None,None))))
+2016-05-09 10:21:00.083+0000 INFO  [o.n.k.i.q.QueryExecutionEngine]: Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(person)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(person),List(LabelName(Person)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(person),Identifier(person)))),None,None,None))))
+2016-05-09 10:21:00.084+0000 INFO  [o.n.k.i.q.QueryExecutionEngine]: Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(person)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(person),List(LabelName(Person)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(person),Identifier(person)))),None,None,None))))
+2016-05-09 10:21:00.084+0000 INFO  [o.n.k.i.q.QueryExecutionEngine]: Discarded stale query from the query cache: Query(None,SingleQuery(List(Match(false,Pattern(List(EveryPath(NodePattern(Some(Identifier(person)),List(),None,false)))),List(),Some(Where(HasLabels(Identifier(person),List(LabelName(Person)))))), Return(false,ReturnItems(false,List(AliasedReturnItem(Identifier(person),Identifier(person)))),None,None,None))))
+2016-05-09 11:10:02.573+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 1756430ms.

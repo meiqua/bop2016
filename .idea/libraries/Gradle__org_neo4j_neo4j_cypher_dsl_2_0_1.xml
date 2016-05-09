@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-cypher-dsl:2.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-dsl/2.0.1/519d317979935773646356ee2f7923090f7d53e8/neo4j-cypher-dsl-2.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-dsl/2.0.1/a3151d1003645811e15fe37d89b066c70f5b57c3/neo4j-cypher-dsl-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
