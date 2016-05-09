@@ -6,7 +6,7 @@ propertyRepository.save();
 
 // 我定义的两个操作
 propertyRepository.findByNameAndType();
-prppertyRepository.findByPropertiesName();
+prppertyRepository.findByOneHopPropertiesName();
 
 // 虽然我就定义了个函数名，但是已经被spring自动实现了
 ```
