@@ -11,8 +11,10 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 //@RepositoryRestResource(collectionResourceRel = "property", path = "property")
 public interface PropertyRepository  {
 
-//    Property findByNameAndType(String name,String type);
-//    List<Property> findByOneHopPropertiesName(String name);
+    Property findByNameAndType(String name,String type);
+    // I think using two params is faster
+
+    List<Property> findByOneHopProperties(String name);
 
     void save(Property property);
     void bind(Property property1,Property property2);

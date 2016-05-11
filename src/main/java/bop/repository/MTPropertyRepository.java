@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.support.Neo4jTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class MTPropertyRepository implements PropertyRepository {
 
@@ -18,6 +20,17 @@ public class MTPropertyRepository implements PropertyRepository {
     public MTPropertyRepository(ManagedTransaction transaction, Neo4jTemplate neo4jTemplate) {
         this.transaction = transaction;
         this.neo4jTemplate = neo4jTemplate;
+    }
+
+    @Override
+    public Property findByNameAndType(String name, String type) {
+
+        return null;
+    }
+
+    @Override
+    public List<Property> findByOneHopProperties(String name) {
+        return null;
     }
 
     @Override
