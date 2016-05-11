@@ -29,4 +29,13 @@ https://spring.io/guides/gs/accessing-data-neo4j/
 https://spring.io/guides/gs/accessing-neo4j-data-rest/  
 https://spring.io/guides/gs/rest-service/  
 
+## update  
+* 增加了事务管理，现在是30000 operation/transaction  
+* 增加了csv file reader，我想的是把数据库存到本地然后生成图数据库  
+* 使用更加底层的API增加效率  
+* findOneHopProperties findByNameAndType两个方法还没写
+  
+主要参考网页  
+http://iordanis.com/post/22677357894/import-large-graphs-to-neo4j-with-spring-data-fast
 
+http://stackoverflow.com/questions/9568203/save-method-of-crudrepository-is-very-slow
