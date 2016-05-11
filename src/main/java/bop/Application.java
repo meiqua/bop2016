@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.neo4j.config.EnableNeo4jRepositories;
 import org.springframework.data.neo4j.config.Neo4jConfiguration;
+import org.springframework.data.neo4j.core.GraphDatabase;
+import org.springframework.data.neo4j.support.DelegatingGraphDatabase;
+import org.springframework.data.neo4j.support.Neo4jTemplate;
 
 import java.io.File;
 
@@ -23,6 +26,24 @@ public class Application extends Neo4jConfiguration {
 	@Bean(destroyMethod = "shutdown")
 	public GraphDatabaseService graphDatabaseService() {
 		return new GraphDatabaseFactory().newEmbeddedDatabase("target/bop.db");
+	}
+
+	@Bean
+	public Neo4jTemplate neo4jTemplate(GraphDatabaseService graphDatabaseService){
+		GraphDatabase graphDatabase = new DelegatingGraphDatabase(graphDatabaseService);
+		return new Neo4jTemplate(graphDatabase);
+	}
+
+	@Bean
+	public int operationsThreshold() {
+		return 30000;
+		// 30k operations/transaction, will save much time compared to 1 operation/transaction
+	}
+
+	@Bean
+	public String csvFile() {
+		return "ourCsvFile.csv";
+		// CsvFile path added here
 	}
 
 	public static void main(String[] args) throws Exception {

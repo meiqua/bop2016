@@ -5,14 +5,16 @@ import java.util.Set;
 
 import bop.domain.Property;
 import org.springframework.data.neo4j.repository.GraphRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-//@RepositoryRestResource(collectionResourceRel = "people", path = "people")
-public interface PropertyRepository extends GraphRepository<Property> {
+//@RepositoryRestResource(collectionResourceRel = "property", path = "property")
+public interface PropertyRepository  {
 
-    Property findByNameAndType(String name,String type);
-    // auto completed by spring,through parsing the method name
+//    Property findByNameAndType(String name,String type);
+//    List<Property> findByOneHopPropertiesName(String name);
 
-    List<Property> findByOneHopPropertiesName(String name);
-    // auto completed by spring,through parsing the method name
+    void save(Property property);
+    void bind(Property property1,Property property2);
 
 }

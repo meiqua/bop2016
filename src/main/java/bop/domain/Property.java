@@ -17,17 +17,17 @@ public class Property {
 	@Indexed
 	private String type;
 
-	@RelatedTo(type = "RELATED",direction = Direction.BOTH)
-	public @Fetch
-	Set<Property> oneHopProperties;
+//	@RelatedTo(type = "RELATED",direction = Direction.BOTH)
+//	public @Fetch
+//	Set<Property> oneHopProperties;
 
-	public void oneHopTo(Property property){
-		if (oneHopProperties == null) {
-			oneHopProperties = new HashSet<>();
-		}
-		oneHopProperties.add(property);
-		//set can make sure no duplicated value being added
-	}
+//	public void oneHopTo(Property property){
+//		if (oneHopProperties == null) {
+//			oneHopProperties = new HashSet<>();
+//		}
+//		oneHopProperties.add(property);
+//		//set can make sure no duplicated value being added
+//	}
 
 	public String getName() {
 		return name;
