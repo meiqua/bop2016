@@ -1,6 +1,7 @@
 package bop.domain;
 
 import org.neo4j.graphdb.Direction;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.neo4j.annotation.*;
 
 import java.util.HashSet;
@@ -9,31 +10,21 @@ import java.util.Set;
 @NodeEntity
 public class Property {
 	private Property(){}
-	@GraphId private Long id;
+	@GraphId private Long graphId;
 
-	@Indexed(unique = true)
-	private String name;
+	private long name;
+	//Use lower API to create labels
 
-	@Indexed
+	@Transient
 	private String type;
+	//I want to create labels, but doubting @labels doesn't work well
+	//So I use lower API to create labels
 
-//	@RelatedTo(type = "RELATED",direction = Direction.BOTH)
-//	public @Fetch
-//	Set<Property> oneHopProperties;
-
-//	public void oneHopTo(Property property){
-//		if (oneHopProperties == null) {
-//			oneHopProperties = new HashSet<>();
-//		}
-//		oneHopProperties.add(property);
-//		//set can make sure no duplicated value being added
-//	}
-
-	public String getName() {
+	public long getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(long name) {
 		this.name = name;
 	}
 

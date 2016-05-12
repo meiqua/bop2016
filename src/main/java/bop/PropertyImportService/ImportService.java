@@ -1,7 +1,7 @@
 package bop.PropertyImportService;
 
 import bop.domain.Property;
-import bop.repository.PropertyRepository;
+import bop.repository.ImportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 public class ImportService {
 
     private final CsvFileReader fileReader;
-    private final PropertyRepository propertyRepository;
+    private final ImportRepository importRepository;
 
     @Autowired
-    public ImportService(CsvFileReader fileReader,PropertyRepository propertyRepository) {
+    public ImportService(CsvFileReader fileReader,ImportRepository importRepository) {
         this.fileReader = fileReader;
-        this.propertyRepository = propertyRepository;
+        this.importRepository = importRepository;
     }
 
     public void importData() {
@@ -28,11 +28,17 @@ public class ImportService {
 //            Product product = new Product(values[1]);
 //            persist(cart, product);
 //        }
+
+        importFinish();
     }
 
-    private void persist(Property p1, Property p2) {
-        propertyRepository.save(p1);
-        propertyRepository.save(p2);
-        propertyRepository.bind(p1,p2);
+    private void importFinish(){
+        importRepository.importFinish();
     }
+
+//    private void persist(Property p1, Property p2) {
+//        importRepository.save(p1);
+//        importRepository.save(p2);
+//        importRepository.bind(p1,p2);
+//    }
 }

@@ -2,10 +2,10 @@
 属性图数据库定义好了，都是通过propertyRepository操作。比如：  
 ```Java
 // 基本的操作
-propertyRepository.save();
+importRepository.save();
 
 // 我定义的两个操作
-propertyRepository.findByNameAndType();
+importRepository.findByNameAndType();
 prppertyRepository.findByOneHopPropertiesName();
 
 // 虽然我就定义了个函数名，但是已经被spring自动实现了

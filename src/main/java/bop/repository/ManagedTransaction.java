@@ -22,6 +22,8 @@ public class ManagedTransaction {
     private final GraphDatabaseService graphDatabaseService;
     private Transaction transaction;
 
+    private boolean transactionBeginFlag;
+
     @Autowired
     public ManagedTransaction(int operationsThreshold, GraphDatabaseService graphDatabaseService) {
         this.operationsThreshold = operationsThreshold;
@@ -34,18 +36,30 @@ public class ManagedTransaction {
     public void start() {
         log.info("Starting managed transaction");
         transaction = graphDatabaseService.beginTx();
+        transactionBeginFlag = true;
+
     }
 
     @PreDestroy
     public void stop() {
         log.info("Stopping managed transaction");
-        transaction.success();
+        if (transactionBeginFlag){
+            transactionBeginFlag = false;
+            transaction.success();
+        }
     }
 
     public void prepareTransaction() {
         incrementOperationsCount();
         if (shouldCreateNewTransaction()) {
             commitAndStartNewTransaction();
+        }
+    }
+
+    public void finishTransaction(){
+        if (transactionBeginFlag){
+            transactionBeginFlag = false;
+            transaction.success();
         }
     }
 
@@ -58,8 +72,12 @@ public class ManagedTransaction {
 
     private void commitAndStartNewTransaction() {
         log.info("========== Refreshing transaction, total: " + totalOperationsCount.addAndGet(operationsCount.getAndSet(0)));
-        transaction.success();
+        if (transactionBeginFlag){
+            transactionBeginFlag = false;
+            transaction.success();
+        }
         transaction = graphDatabaseService.beginTx();
+        transactionBeginFlag = true;
     }
 
     private void incrementOperationsCount() {
