@@ -14,6 +14,7 @@ import org.springframework.data.neo4j.support.DelegatingGraphDatabase;
 import org.springframework.data.neo4j.support.Neo4jTemplate;
 
 import java.io.File;
+import java.util.concurrent.CountDownLatch;
 
 @SpringBootApplication
 @EnableNeo4jRepositories
@@ -46,10 +47,16 @@ public class Application extends Neo4jConfiguration {
 		// CsvFile path added here
 	}
 
+	@Bean
+	public ResettableCountDownLatch resettableCountDownLatch(){
+		return new ResettableCountDownLatch(1);
+	}
+
 	public static void main(String[] args) throws Exception {
 
 		FileUtils.deleteRecursively(new File("target/bop.db"));
 
 		SpringApplication.run(Application.class, args);
 	}
+
 }

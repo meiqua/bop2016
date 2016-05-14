@@ -1,17 +1,15 @@
 package bop.repository;
 
-import bop.domain.Property;
+import bop.domain.AfId;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.GraphRepository;
 
-public interface PropertyRepository extends GraphRepository<Property> {
+import java.util.List;
 
-    @Query("MATCH (property:{1} {name:{0}})" +
-            "RETURN property")
-        Property findByNameAndType(long name,String type);
 
-    @Query("MATCH (property:{1} {name:{0}})-[:HOP]-(oneHopProperties)" +
-            "RETURN oneHopProperties")
-        Iterable<Property> findOneHopProperties(long name,String type);
+public interface PropertyRepository extends GraphRepository<AfId> {
 
+    @Query("MATCH (au1:AuId {name:{0}})-[:HOP]-(afId:AfId)-[:HOP]-(au2:AuId {name:{1}})" +
+            "RETURN afId.name")
+    List<Long> findTwoHop(long name1,long name2);
 }
