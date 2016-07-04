@@ -38,4 +38,7 @@ https://spring.io/guides/gs/rest-service/
 主要参考网页  
 http://iordanis.com/post/22677357894/import-large-graphs-to-neo4j-with-spring-data-fast
 
-http://stackoverflow.com/questions/9568203/save-method-of-crudrepository-is-very-slow
+http://stackoverflow.com/questions/9568203/save-method-of-crudrepository-is-very-slow  
+
+## update
+全用的阻塞http，返回结果基本正确，耗时略长。。
