@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/libs-release" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.4.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'bop'
+    version = '0.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-data-rest")
+    compile("org.springframework.data:spring-data-neo4j")
+    compile("org.hibernate:hibernate-validator")
+
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("junit:junit")
+
+    compile("org.apache.httpcomponents:httpasyncclient:4.0.2")
+    compile("com.mashape.unirest:unirest-java:1.4.9")
+    compile("org.apache.httpcomponents:httpclient:4.3.6")
+    compile("org.apache.httpcomponents:httpmime:4.3.6")
+    compile("org.json:json:20140107")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
+}

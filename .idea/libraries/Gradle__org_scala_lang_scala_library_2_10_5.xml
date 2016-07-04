@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.scala-lang:scala-library:2.10.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.10.5/57ac67a6cf6fd591e235c62f8893438e8d10431d/scala-library-2.10.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.10.5/a75210c2d9907b0703cf6d5c220747a53e6bf38e/scala-library-2.10.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
