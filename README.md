@@ -42,6 +42,7 @@ http://stackoverflow.com/questions/9568203/save-method-of-crudrepository-is-very
 
 ## update
 全用的阻塞http，返回结果基本正确，耗时略长。。最后拿了个衣服  
+
 简单说明：hopMethod是所有1-2-3hop的跳转路径，client根据flag制定跳转细则；  
           hopPath打算进行异步http控制,后来把自己绕进去了，时间也不够了就全用的阻塞。。  
           afid-auid-afid的路径不好直接用微软api查，我们就用了个neo4j图数据库存到本地查；  
